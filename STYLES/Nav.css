@@ -1,0 +1,69 @@
+.navigation-bar{
+  /* Positioning of the elements in nav */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  /* background-color: rgb(220, 215, 250); */
+  background-color: var(--primary-color);
+
+  /* Font in whole nav */
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  /* Nav Fixed position */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+
+  z-index: 1;
+
+}
+
+.right-nav-section{
+  width: 50vw;
+
+}
+.right-nav-section ul{
+  list-style: none ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.right-nav-section ul a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* Color Animation on cursor pointing */
+.left-nav-section{
+  /* Cursor style */
+  cursor: pointer;
+  transition: color .2s ease-in;
+}
+.left-nav-section:hover{
+  color: blueviolet;
+}
+
+.right-nav-section ul li{
+  /* Cursor style */
+  cursor: pointer;
+  transition: color .2s ease-in;
+}
+.right-nav-section ul li:hover{
+  color: blueviolet;
+}
+
+
+.dark-light-theme-button{
+  height: 10px;
+}
+
+
+
+.left-nav-section:before {
+  content: 'O';
+  font-size: 20px;
+  margin-right: 10px;
+}

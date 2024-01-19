@@ -1,0 +1,39 @@
+#Contact-Me form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  margin: 20px;
+  margin-left: 150px;
+  height: 400px;
+  width: 400px;
+
+  
+}
+#Contact-Me form *{
+  font-size: 20px;
+
+  margin: 10px;
+
+  height: 30px;
+  width: 500px;
+}
+#Contact-Me form textarea{
+  margin: 10px;
+  height: 400px;
+
+
+}
+
+.contacts-info-container{
+  display: flex;
+  width: 100%;
+}
+
+.contacts-info-container p{
+  width: 500px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}

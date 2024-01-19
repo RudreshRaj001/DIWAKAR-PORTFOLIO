@@ -1,0 +1,65 @@
+.projects-containers{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  overflow: scroll;
+  
+}
+
+.black-center-line{
+  background-color: var(--secondary-color);
+  width: 2px;
+  height: 800px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+}
+.black-center-line span{
+  margin-left: -8px;
+  /* color: aliceblue; */
+  font-size: 50px;
+}
+
+.each-project{
+  height: 260px;
+  width: 400px;
+  /* background-color: rgba(255, 255, 0, 0.505); */
+  border-radius:20px;
+  padding-top: 10px;
+  border: 2px solid var(--secondary-color);
+}
+.each-project *{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.each-project h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.each-project button{
+  margin-top: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  /* border: none !important; */
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: background-color .2s ease-in, color .2s ease-in;
+}
+.each-project button:hover{
+  /* background-color: rgb(75, 73, 73); */
+  color: blueviolet;
+}
+
+/* Utility Class */
+.left-project{
+  margin-left: -420px;
+}
+.right-project{
+  margin-left: 20px;
+}

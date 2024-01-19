@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root{
+  /* --primary-color: #fff;
+  --secondary-color: rgb(25,22,39);
+  --primary-shadow: rgba(0, 0, 0, 0.2); */
+    
+  --primary-color: rgb(25,22,39);
+  --secondary-color: #FFFFFF;
+  --primary-shadow: rgba(255, 255, 255, 0.2);
+
+  --color-1: #8100C2;
+  --color-2: #660099;
+  --color-3: #9900E6;
+  --color-4: #FFFFFF;
+  --color-5: #300047;
+}
+.dark-theme{
+  --primary-color: #fff;
+  --secondary-color: rgb(25,22,39);
+  --primary-shadow: rgba(0, 0, 0, 0.2);
+/*   
+  --primary-color: rgb(25,22,39);
+  --secondary-color: #FFFFFF;
+  --primary-shadow: rgba(255, 255, 255, 0.2); */
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}

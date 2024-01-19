@@ -1,0 +1,58 @@
+.home{
+  /* background-color: red; */
+  height: 500px;
+  width: 70vw;
+  margin: auto;
+}
+.home-section{
+  /* background-color: rgb(8, 245, 245); */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.information{
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  width: 500px;
+}
+.information h1{
+  font-size: 40px;
+  font-weight: bold;
+
+}
+.information h3{
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+.information h4{
+  margin-top: 15px;
+  font-size: 15px;
+
+}
+.contact-button{
+  margin-top: 50px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+  font-size: 15px;
+  font-weight: bold !important;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+}
+/* .profile-picture{
+  background-color: rgb(36, 220, 36); 
+} */
+.profile-picture img{
+  height: 200px;
+  box-shadow: 0 20px 5px 5px var(--primary-shadow);
+  animation: animate 5s ease-in-out infinite;
+  transition: animate 1s ease-in-out;
+  
+}
