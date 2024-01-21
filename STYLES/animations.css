@@ -14,11 +14,10 @@
     }
   
   to {
-    transform: translateX(0);
+    transform: translateX(0); 
   }
   
 }
-
 
 @keyframes animate {
   0%{
