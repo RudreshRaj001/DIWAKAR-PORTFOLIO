@@ -19,7 +19,7 @@ const projects = [
   },
   {
     Project_Name: "Movie Recommender System",
-    Project_Description: "The Movie Recommender System is a machine learning project that provides personalized movie recommendations. Using advanced recommendation algorithms, this system suggests movies tailored to individual preferences, enhancing the user's movie-watching experience.",
+    Project_Description: "The Movie Recommender System is a machine learning project that provides personalized movie recommendations. Using advanced recommendation algorithms, this system suggests movies tailored to individual preferences.",
     Github_link: "https://github.com/AI-ML-DL-EXPERT/Movie-Recommender-System",
     Live_link: " ",
   },
@@ -56,8 +56,10 @@ projects.forEach((projects) => {
   <div class="each-project ${direct}">
     <h2>${projects.Project_Name}</h2> 
     <h4>${projects.Project_Description}</h4>
+    <div class="btn-container">
     <a href="${projects.Github_link}" target="_blank"><button class="btn">Visit Github</button></a>
-    <a href="" target="_blank"><button>Live preview</button></a>
+    <a href="" target="_blank"><button class="btn">Live preview</button></a>
+    </div>
   </div>
 `
 height += 300;

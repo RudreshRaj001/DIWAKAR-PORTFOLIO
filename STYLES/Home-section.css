@@ -21,30 +21,34 @@
 .information h1{
   font-size: 40px;
   font-weight: bold;
-
+  color: var(--Heading-color);
 }
 .information h3{
   margin-top: 15px;
   font-size: 25px;
   font-weight: bold;
+  color: var(--Heading-color);
 
 }
 .information h4{
   margin-top: 15px;
   font-size: 15px;
+  color: var(--Text-color);
 
 }
 .contact-button{
   margin-top: 50px;
   width: 100px;
   height: 40px;
-  border-radius: 5px;
-  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+  border: none !important;
+  /* border: 1px solid var(--secondary-color); */
   font-size: 15px;
   font-weight: bold !important;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-
+  /* background-color: var(--primary-color); */
+  background-color: var(--Button);
+  /* color: var(--secondary-color); */
+  color: var(--Button-text);
 }
 /* .profile-picture{
   background-color: rgb(36, 220, 36); 

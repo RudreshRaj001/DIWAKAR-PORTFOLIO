@@ -1,0 +1,12 @@
+#About div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+#About p{
+  width: 75ch;
+}
+#About img{
+  height: 300px;
+}

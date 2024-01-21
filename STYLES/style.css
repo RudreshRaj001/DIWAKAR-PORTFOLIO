@@ -4,6 +4,8 @@
 }
 html {
   scroll-behavior: smooth;
+  /* cursor:url(/ASSETS/cursor.png),auto; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 :root{
   /* --primary-color: #fff;
@@ -13,6 +15,16 @@ html {
   --primary-color: rgb(25,22,39);
   --secondary-color: #FFFFFF;
   --primary-shadow: rgba(255, 255, 255, 0.2);
+
+  --Button: #6E57E0;
+  --Button-text: #ffffff;
+
+  --Heading-color: #ffffff;
+  --Text-color: #BCBAC4;
+  
+  --scroll: rgb(255, 255, 255);
+
+  --footer-color: rgb(16, 14, 27);
 
   --color-1: #8100C2;
   --color-2: #660099;
@@ -24,6 +36,17 @@ html {
   --primary-color: #fff;
   --secondary-color: rgb(25,22,39);
   --primary-shadow: rgba(0, 0, 0, 0.2);
+
+  /* --Button: #300047; */
+  --Button: #6E57E0;
+  --Button-text: #ffffff;
+
+  --scroll: rgb(0, 0, 0);
+
+  --footer-color: #6E57E0;
+
+  --Heading-color: #000000;
+  --Text-color: #6D6A7C;
 /*   
   --primary-color: rgb(25,22,39);
   --secondary-color: #FFFFFF;
@@ -33,4 +56,5 @@ html {
 body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  /* cursor:url('/ASSETS/cursor.png'),auto; */
 }

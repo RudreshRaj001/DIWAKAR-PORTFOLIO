@@ -1,6 +1,17 @@
  .skills-specific-container{
-  width: 100px;
-  margin: 0;
+  width: 80vw;
+  height: 120vh;
+  margin: auto;
+}
+ .Skill-panel{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+ .skills-specific-container>div>p{
+  width: 70ch;
 }
 
 .skills-containers{
@@ -14,29 +25,23 @@
   height: auto;
   width: 25vw;
   margin: 0;
-  position: absolute;
+  /* position: absolute; */
   left: 150px;
+  margin-top: 50px;
 }
 
-/* Video code */
-.skills{
-  width: 80vh;
-  /* max-width: 600px; */
-  padding: 0 20px;
-}
-/* .skill-specific-container{
+.skill{
+  width: 550px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 34px;
 }
-.skill-specific-container img{
-  height: 30px;
-} */
+.image{
+  height: 45px;
+}
 
-/* .image{
-  height: 30px;
-  position: absolute;
-  top: -20px;
-} */
+
 .skill-name{
   font-size: 18px;
   font-weight: 700;
@@ -46,12 +51,13 @@
 }
 
 .skill-bar{
-  height: 14px;
+  height: 18px;
+  width: 380px;
   background: #282828;
   border-radius: 3px;
 }
 .skill-per{
-  height: 14px;
+  height: 18px;
   background: blueviolet;
   border-radius: 3px;
   position: relative;
