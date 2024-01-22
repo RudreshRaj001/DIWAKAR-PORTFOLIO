@@ -15,6 +15,7 @@ html {
   --primary-color: rgb(25,22,39);
   --secondary-color: #FFFFFF;
   --primary-shadow: rgba(255, 255, 255, 0.2);
+  --primary-shadow-active: rgba(255, 255, 255, 0.749);
 
   --Button: #6E57E0;
   --Button-text: #ffffff;
@@ -34,8 +35,10 @@ html {
 }
 .dark-theme{
   --primary-color: #fff;
+  /* --primary-color: #5183a5; */
   --secondary-color: rgb(25,22,39);
   --primary-shadow: rgba(0, 0, 0, 0.2);
+  --primary-shadow-active: rgba(0, 0, 0, 0.749);
 
   /* --Button: #300047; */
   --Button: #6E57E0;

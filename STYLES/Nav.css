@@ -39,7 +39,9 @@
 /* Color Animation on cursor pointing */
 .left-nav-section{
   /* Cursor style */
+  text-decoration: none;
   cursor: pointer;
+  color: var(--secondary-color);
   transition: color .2s ease-in;
 }
 .left-nav-section:hover{

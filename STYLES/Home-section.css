@@ -1,7 +1,7 @@
 .home{
   /* background-color: red; */
-  height: 500px;
-  width: 70vw;
+  height: 700px;
+  width: 80vw;
   margin: auto;
 }
 .home-section{
@@ -19,7 +19,7 @@
   width: 500px;
 }
 .information h1{
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bold;
   color: var(--Heading-color);
 }
@@ -32,29 +32,43 @@
 }
 .information h4{
   margin-top: 15px;
-  font-size: 15px;
+  font-size: 17px;
   color: var(--Text-color);
 
 }
+.home-btn-container{
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .contact-button{
   margin-top: 50px;
-  width: 100px;
+  margin-right: 40px;
+  width: 120px;
   height: 40px;
   border-radius: 3px;
-  border: none !important;
+  border: none;
   /* border: 1px solid var(--secondary-color); */
   font-size: 15px;
-  font-weight: bold !important;
+  font-weight: bold;
   /* background-color: var(--primary-color); */
   background-color: var(--Button);
   /* color: var(--secondary-color); */
   color: var(--Button-text);
+  cursor: pointer;
+}
+.github-btn{
+  background-color: transparent;
+  border: 2px solid var(--Button);
+  color: var(--Button);
 }
 /* .profile-picture{
   background-color: rgb(36, 220, 36); 
 } */
 .profile-picture img{
-  height: 200px;
+  height: 300px;
   box-shadow: 0 20px 5px 5px var(--primary-shadow);
   animation: animate 5s ease-in-out infinite;
   transition: animate 1s ease-in-out;

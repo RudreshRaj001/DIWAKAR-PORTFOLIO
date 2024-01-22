@@ -1,4 +1,4 @@
-const projects = [
+const AIprojects = [
   {
     Project_Name: "Book Recommendation System",
     Project_Description: "The Book Recommendation System is a machine learning project designed to provide personalized book recommendations. It leverages supervised and unsupervised learning techniques to enhance user experience by suggesting books based on their preferences.",
@@ -37,33 +37,112 @@ const projects = [
   },
 ];
 
+const MLprojects = [
+  {
+    Project_Name: "Health and Fitness Companion",
+    Project_Description: "The Health and Fitness Companion is a machine learning project designed to assist users in achieving their fitness goals. Using personalized data and machine learning models, it provides workout recommendations, nutritional advice, and progress tracking.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Health-Fitness-Companion",
+    Live_link: " ",
+  },
+  {
+    Project_Name: "Real Estate Price Predictor",
+    Project_Description: "The Real Estate Price Predictor is a machine learning project that predicts property prices. Employing various predictive models and real estate data, this project helps users estimate the value of properties based on different features and market trends.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Real-Estate-Price-Predictor",
+    Live_link: " ",
+  },
+  {
+    Project_Name: "Weather Forecasting System",
+    Project_Description: "The Weather Forecasting System is a machine learning project aimed at predicting weather conditions. Through analysis of meteorological data and advanced algorithms, this project provides accurate weather forecasts for specific locations.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Weather-Forecasting-System",
+    Live_link: " ",
+  },
+  {
+    Project_Name: "Music Genre Classifier",
+    Project_Description: "The Music Genre Classifier is a machine learning project that classifies music into different genres. Using audio features and machine learning techniques, it enhances music recommendation systems and genre-based playlists.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Music-Genre-Classifier",
+    Live_link: " ",
+  },
+  {
+    Project_Name: "Email Priority Sorter",
+    Project_Description: "The Email Priority Sorter is a machine learning project designed to prioritize emails based on their importance. Leveraging natural language processing and user behavior analysis, it helps users manage their inbox more efficiently.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Email-Priority-Sorter",
+    Live_link: " ",
+  },
+  {
+    Project_Name: "Stock Price Predictor",
+    Project_Description: "The Stock Price Predictor is a machine learning project focused on predicting stock prices. By analyzing financial data and market trends, the system provides predictions for stock prices in various markets.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Stock-Price-Predictor",
+    Live_link: " ",
+  },
+];
 
-let projectsHTML = '';
-let direction = 0;
-let direct = "left-project";
-let height = 0;
 
-projects.forEach((projects) => {
-  if(direction === 0) {
-    direct = "left-project";
-    direction = 1;
-  } else {
-    direct = "right-project"
-    direction = 0;
-  };
-  projectsHTML += `
-  <span>&#x2022;</span>
-  <div class="each-project ${direct}">
-    <h2>${projects.Project_Name}</h2> 
-    <h4>${projects.Project_Description}</h4>
-    <div class="btn-container">
-    <a href="${projects.Github_link}" target="_blank"><button class="btn">Visit Github</button></a>
-    <a href="" target="_blank"><button class="btn">Live preview</button></a>
+  let projectsHTML = '';
+  let direction = 0;
+  let direct = "left-project";
+  let direct_Animate = "animate-left-project";
+  let height = 0;
+
+  AIprojects.forEach((X) => {
+    if(direction === 0) {
+      direct = "left-project";
+      direct_Animate = "animate-left-project";
+      direction = 1;
+    } else {
+      direct = "right-project"
+      direct_Animate = "animate-right-project";
+      direction = 0;
+    };
+    projectsHTML += `
+    <span>&#x2022;</span>
+    <div class="each-project ${direct} ${direct_Animate}">
+      <h2>${X.Project_Name}</h2> 
+      <h4>${X.Project_Description}</h4>
+      <div class="btn-container">
+      <a href="${X.Github_link}" target="_blank"><button class="btn">Visit Github</button></a>
+      <a href="" target="_blank"><button class="btn">Live preview</button></a>
+      </div>
     </div>
-  </div>
-`
-height += 300;
-document.querySelector('.black-center-line').style.height = height + "px";
-});
-console.log(projectsHTML);
-document.querySelector('.black-center-line').innerHTML = projectsHTML;
+  `
+  height += 300;
+  document.querySelector('.black-center-line').style.height = height + "px";
+  });
+  document.querySelector('.black-center-line').innerHTML = projectsHTML;
+
+
+function Render_Project_section(projects){
+  let projectsHTML = '';
+  let direction = 0;
+  let direct = "left-project";
+  let direct_Animate = "animate-left-project";
+  let height = 0;
+
+  projects.forEach((X) => {
+    if(direction === 0) {
+      direct = "left-project";
+      direct_Animate = "animate-left-project";
+      direction = 1;
+    } else {
+      direct = "right-project"
+      direct_Animate = "animate-right-project";
+      direction = 0;
+    };
+    projectsHTML += `
+    <span>&#x2022;</span>
+    <div class="each-project ${direct} ${direct_Animate}">
+      <h2>${X.Project_Name}</h2> 
+      <h4>${X.Project_Description}</h4>
+      <div class="btn-container">
+      <a href="${X.Github_link}" target="_blank"><button class="btn">Visit Github</button></a>
+      <a href="" target="_blank"><button class="btn">Live preview</button></a>
+      </div>
+    </div>
+  `
+  height += 300;
+  document.querySelector('.black-center-line').style.height = height + "px";
+  });
+  document.querySelector('.black-center-line').innerHTML = projectsHTML;
+
+  // To again make the scroll animations available
+  ProjectAnimation();
+}
