@@ -83,6 +83,9 @@ const MLprojects = [
   let direct_Animate = "animate-left-project";
   let height = 0;
 
+  // setting AI button color before first rendering the project section with AI projects
+  document.querySelector('.AI-project-btn').style.color = 'var(--Button)';
+
   AIprojects.forEach((X) => {
     if(direction === 0) {
       direct = "left-project";
