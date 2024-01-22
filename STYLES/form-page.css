@@ -9,7 +9,7 @@
   height: 400px;
   width: fit-content;
 
-  background-color: rgb(200, 203, 209);
+  /* background-color: rgb(200, 203, 209); */
   border-radius: 5px;
 }
 
@@ -29,11 +29,19 @@
   margin: 10px;
   height: 30px;
   width: 500px;
+
+  /* background-color: rgba(255, 255, 255, 0.29); */
+  border: none;
+  border-radius: 10px;
 }
 
 #Contact-Me form textarea{
   margin: 10px;
   height: 400px;
+}
+#Contact-Me form h2{
+  font-size: 30px;
+  /* color: var(); */
 }
 
 .submit-btn{
