@@ -30,7 +30,7 @@
   height: 30px;
   width: 500px;
 
-  /* background-color: rgba(255, 255, 255, 0.29); */
+  background-color: rgba(128, 128, 128, 0.459);
   border: none;
   border-radius: 10px;
 }
@@ -41,7 +41,7 @@
 }
 #Contact-Me form h2{
   font-size: 30px;
-  /* color: var(); */
+  /* color: var(--primary-color); */
 }
 
 .submit-btn{
