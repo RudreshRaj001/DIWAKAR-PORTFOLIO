@@ -65,6 +65,7 @@
   animation: Section-animation 2s ease-in-out forwards;
 }
 
+
 .animate-left-project{
   animation: Projects-animation-left 1s ease-in-out 1;
   transition: Projects-animation-left 1s ease-in-out;

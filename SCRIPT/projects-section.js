@@ -39,79 +39,47 @@ const AIprojects = [
 
 const MLprojects = [
   {
-    Project_Name: "Health and Fitness Companion",
-    Project_Description: "The Health and Fitness Companion is a machine learning project designed to assist users in achieving their fitness goals. Using personalized data and machine learning models, it provides workout recommendations, nutritional advice, and progress tracking.",
-    Github_link: "https://github.com/AI-ML-DL-EXPERT/Health-Fitness-Companion",
+    Project_Name: "Next Word Predictor",
+    Project_Description: "Next Word Predictor Using DL ( RNN ): This project employs deep learning Recurrent Neural Networks ( RNN ) to predict the next word in a sequence of text. Enhance text generation and language modeling with advanced predictive capabilities.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Next-Word-Predictor",
     Live_link: " ",
   },
   {
-    Project_Name: "Real Estate Price Predictor",
-    Project_Description: "The Real Estate Price Predictor is a machine learning project that predicts property prices. Employing various predictive models and real estate data, this project helps users estimate the value of properties based on different features and market trends.",
-    Github_link: "https://github.com/AI-ML-DL-EXPERT/Real-Estate-Price-Predictor",
+    Project_Name: "Car Price Predictor Using DL",
+    Project_Description: "Car Price Predictor using Deep Learning: Employs neural networks to accurately predict car prices based on mileage, brand, and year. Offers data preprocessing and model evaluation for seamless predictions. Built with Python, TensorFlow, Keras, NumPy, and Pandas.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Car-Price-Predictor-Using-DL",
     Live_link: " ",
   },
   {
-    Project_Name: "Weather Forecasting System",
-    Project_Description: "The Weather Forecasting System is a machine learning project aimed at predicting weather conditions. Through analysis of meteorological data and advanced algorithms, this project provides accurate weather forecasts for specific locations.",
-    Github_link: "https://github.com/AI-ML-DL-EXPERT/Weather-Forecasting-System",
+    Project_Name: "Customer Churn Prediction Using DL",
+    Project_Description: "Customer Churn Prediction Using DL: This project focuses on using deep learning techniques to predict customer churn. By analyzing patterns and trends, the goal is to help businesses proactively retain customers and minimize churn.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Customer-Churn-Prediction-Using-DL",
     Live_link: " ",
   },
   {
-    Project_Name: "Music Genre Classifier",
-    Project_Description: "The Music Genre Classifier is a machine learning project that classifies music into different genres. Using audio features and machine learning techniques, it enhances music recommendation systems and genre-based playlists.",
-    Github_link: "https://github.com/AI-ML-DL-EXPERT/Music-Genre-Classifier",
+    Project_Name: "Cat VS Dog Classifier",
+    Project_Description: "Deep learning project using CNN to classify cat and dog images. Implemented in TensorFlow and Keras, trained on a labeled dataset. Includes model code and training data.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Cat-VS-Dog-Classifier",
     Live_link: " ",
   },
   {
-    Project_Name: "Email Priority Sorter",
-    Project_Description: "The Email Priority Sorter is a machine learning project designed to prioritize emails based on their importance. Leveraging natural language processing and user behavior analysis, it helps users manage their inbox more efficiently.",
-    Github_link: "https://github.com/AI-ML-DL-EXPERT/Email-Priority-Sorter",
+    Project_Name: "Handwritten Digit Classifier using ANN",
+    Project_Description: "Handwritten Digit Classifier using Artificial Neural Networks (ANN), Implemented in Python with TensorFlow and Keras. Includes model code, training data, and evaluation scripts for accurate digit recognition.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Handwritten-Digit-Classifier-using-ANN",
     Live_link: " ",
   },
   {
-    Project_Name: "Stock Price Predictor",
-    Project_Description: "The Stock Price Predictor is a machine learning project focused on predicting stock prices. By analyzing financial data and market trends, the system provides predictions for stock prices in various markets.",
-    Github_link: "https://github.com/AI-ML-DL-EXPERT/Stock-Price-Predictor",
+    Project_Name: "Admission Predictor",
+    Project_Description: "Admission Predictor using Deep Learning: Predicts admission outcomes using neural networks. Features data preprocessing, model evaluation, and Hyperparameter Tuning for the best results.",
+    Github_link: "https://github.com/AI-ML-DL-EXPERT/Admission-Predictor",
     Live_link: " ",
   },
+  
+  
 ];
 
 
-  let projectsHTML = '';
-  let direction = 0;
-  let direct = "left-project";
-  let direct_Animate = "animate-left-project";
-  let height = 0;
-
-  // setting AI button color before first rendering the project section with AI projects
-  document.querySelector('.AI-project-btn').style.color = 'var(--Button)';
-
-  AIprojects.forEach((X) => {
-    if(direction === 0) {
-      direct = "left-project";
-      direct_Animate = "animate-left-project";
-      direction = 1;
-    } else {
-      direct = "right-project"
-      direct_Animate = "animate-right-project";
-      direction = 0;
-    };
-    projectsHTML += `
-    <span>&#x2022;</span>
-    <div class="each-project ${direct} ${direct_Animate}">
-      <h2>${X.Project_Name}</h2> 
-      <h4>${X.Project_Description}</h4>
-      <div class="btn-container">
-      <a href="${X.Github_link}" target="_blank"><button class="btn">Visit Github</button></a>
-      <a href="" target="_blank"><button class="btn">Live preview</button></a>
-      </div>
-    </div>
-  `
-  height += 300;
-  document.querySelector('.black-center-line').style.height = height + "px";
-  });
-  document.querySelector('.black-center-line').innerHTML = projectsHTML;
-
+Render_Project_section(AIprojects);
 
 function Render_Project_section(projects){
   let projectsHTML = '';
@@ -119,6 +87,14 @@ function Render_Project_section(projects){
   let direct = "left-project";
   let direct_Animate = "animate-left-project";
   let height = 0;
+
+  if(projects == AIprojects){
+    document.querySelector('.AI-project-btn').style.color = 'var(--Button)';
+    document.querySelector('.ML-project-btn').style.color = 'var(--secondary-color)';
+  } else if(projects == MLprojects){
+    document.querySelector('.ML-project-btn').style.color = 'var(--Button)';
+    document.querySelector('.AI-project-btn').style.color = 'var(--secondary-color)';
+  }
 
   projects.forEach((X) => {
     if(direction === 0) {

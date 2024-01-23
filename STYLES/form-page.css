@@ -9,8 +9,9 @@
   height: 400px;
   width: fit-content;
 
-  /* background-color: rgb(200, 203, 209); */
-  border-radius: 5px;
+  /* background-color: var(--color-); */
+  padding: 10px;
+  border-radius: 20px;
 }
 
 /* #Contact-Me form *{
@@ -30,7 +31,7 @@
   height: 30px;
   width: 500px;
 
-  background-color: rgba(128, 128, 128, 0.459);
+  background-color: var(--form-input-bg);
   border: none;
   border-radius: 10px;
 }
@@ -48,7 +49,7 @@
   width: 100px;
   height: 50px;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 20px;
   font-size: 16px;
   border: none !important;
   background-color: var(--Button);
@@ -56,12 +57,13 @@
 
   margin-left: 10px;
   margin-top: 20px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .contacts-info-container{
   display: flex;
   width: 100%;
+  margin-top: 20px;
 }
 
 .contacts-info-container p{

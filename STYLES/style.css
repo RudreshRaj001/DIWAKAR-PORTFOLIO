@@ -32,6 +32,9 @@ html {
   --color-3: #9900E6;
   --color-4: #FFFFFF;
   --color-5: #300047;
+
+  --form-input-bg: rgba(255, 255, 255, 0.742);
+  
 }
 .dark-theme{
   --primary-color: #fff;
@@ -50,6 +53,8 @@ html {
 
   --Heading-color: #000000;
   --Text-color: #6D6A7C;
+
+  --form-input-bg: rgba(0, 0, 0, 0.742);
 /*   
   --primary-color: rgb(25,22,39);
   --secondary-color: #FFFFFF;
@@ -60,4 +65,12 @@ body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   /* cursor:url('/ASSETS/cursor.png'),auto; */
+}
+svg{
+  fill: currentColor;
+  transition: fill .2s ease-in-out;
+  cursor: pointer;
+}
+svg:hover{
+  fill: var(--Button);
 }
