@@ -1,0 +1,19 @@
+.Scroll-up-button{
+  position: fixed;
+  background: var(--Button);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: none;
+  height: 60px;
+  width: 60px;
+  right: 30px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: display .5s ease-in-out;
+}
+.hidden-element{
+  display: none;
+}

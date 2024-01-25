@@ -72,3 +72,21 @@ hiddenProjectRight.forEach((e1)=>each_project_observe_right.observe(e1));
 
 // Calling the scroll animation
 ProjectAnimation();
+
+
+
+// For Scroll Up Button
+const Home_observer = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    console.log(entry);
+    if (entry.isIntersecting){
+      document.querySelector('.Scroll-up-button').classList.add('hidden-element');
+    } else {
+      document.querySelector('.Scroll-up-button').classList.remove('hidden-element');
+      // entry.target.classList.remove('skill-bar-animate');
+    }
+  });
+})
+
+const Home_section = document.querySelectorAll('.home-section');
+Home_section.forEach((e1)=>Home_observer.observe(e1));
