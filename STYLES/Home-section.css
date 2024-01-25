@@ -6,17 +6,24 @@
 }
 .home-section{
   /* background-color: rgb(8, 245, 245); */
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+.Linkdin-n-github-link-home{
+  position: absolute;
+  left: 0px;
+  /* top: 250px; */
+  transform: rotate(-90deg);
+}
 .information{
   display: flex;
   flex-direction: column;
   /* background-color: blue; */
-  width: 500px;
+  width: 570px;
 }
 .information h1{
   font-size: 45px;
