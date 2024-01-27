@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diwakar Singh</title>
-  
+
   <link rel="stylesheet" href="STYLES\style.css">
   <link rel="stylesheet" href="STYLES\utility-classes.css">
   <link rel="stylesheet" href="STYLES\animations.css">
@@ -19,6 +20,7 @@
   <link rel="stylesheet" href="STYLES\custom-cursor.css">
   <link rel="stylesheet" href="STYLES\Scroll-up-button.css">
   <link rel="stylesheet" href="STYLES\footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script defer src="SCRIPT\script.js"></script>
   <script defer src="SCRIPT\dark-mode.js"></script>
@@ -26,51 +28,71 @@
   <script defer src="SCRIPT\scroll.js"></script>
 
 </head>
+
 <body>
   <nav class="navigation-bar">
     <a href="#Home" class="left-nav-section">Diwakar Singh</a>
     <div class="right-nav-section">
       <ul>
-        <a href="#Home"><li>Home</li></a>
-        <a href="#About"><li>About Me</li></a>
-        <a href="#Skills"><li>Skills</li></a>
-        <a href="#Projects"><li>Projects</li></a>
-        <a href="#Contact-Me"><li>Contact Me</li></a>
+        <a href="#Home">
+          <li>Home</li>
+        </a>
+        <a href="#About">
+          <li>About Me</li>
+        </a>
+        <a href="#Skills">
+          <li>Skills</li>
+        </a>
+        <a href="#Projects">
+          <li>Projects</li>
+        </a>
+        <a href="#Contact-Me">
+          <li>Contact Me</li>
+        </a>
       </ul>
     </div>
     <img src="ASSETS/sun.png" id="icon">
-    
+
   </nav>
 
-  <a href="#Home"><button class="Scroll-up-button hidden-element">&uarr;</button></a>
+  <a href="#Home"><button class="Scroll-up-button hidden-element"><i class="fa-solid fa-arrow-up"></i></button></a>
 
 
   <section id="Home" class="section-content-container home">
     <div class="home-section">
       <div class="Linkdin-n-github-link-home">
-        <a href="https://www.linkedin.com/in/diwakar-singh-741959243/" target="_blank" style="text-decoration: none; color: var(--secondary-color);">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        <a href="https://www.linkedin.com/in/diwakar-singh-741959243/" target="_blank"
+          style="text-decoration: none; color: var(--secondary-color);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
           </svg> &nbsp;
         </a>
-        <a href="https://github.com/AI-ML-DL-EXPERT" target="_blank" style="text-decoration: none; color: var(--secondary-color);">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        <a href="https://github.com/AI-ML-DL-EXPERT" target="_blank"
+          style="text-decoration: none; color: var(--secondary-color);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
           </svg>
         </a>
       </div>
       <div class="information">
         <h1>Hi, I'm Diwakar Singh</h1>
         <h3>Game Development
-          And 
-          <span id="element"></span></h3>
-        
-        <h4>BCA Game Development | Professional AI ML DL Developer  <br>
-           Let's connect and innovate together ! </h4>
+          And
+          <span id="element"></span>
+        </h3>
+
+        <h4>BCA Game Development | Professional AI ML DL Developer <br>
+          Let's connect and innovate together ! </h4>
 
         <div class="home-btn-container">
-          <a href="https://www.freelancer.com/u/AICodeMaster" target="_blank"><button class="contact-button">Hire Me</button></a>
-          <a href="https://github.com/AI-ML-DL-EXPERT" target="_blank"><button class="contact-button github-btn">GitHub</button></a>
+          <a href="https://www.freelancer.com/u/AICodeMaster" target="_blank"><button class="contact-button">Hire
+              Me</button></a>
+          <a href="https://github.com/AI-ML-DL-EXPERT" target="_blank"><button
+              class="contact-button github-btn">GitHub</button></a>
         </div>
       </div>
       <div class="profile-picture">
@@ -88,16 +110,24 @@
           <!-- <span>👋 Hi, I'm Diwakar Singh</span> -->
           <!-- a passionate freelance AI enthusiast with a strong focus on machine learning and deep learning. I specialize in building recommendation systems, predictive models, and intelligent assistants to enhance user experiences. Dedicated to continuous learning, I stay updated with the latest advancements in AI and machine learning. I'm open to freelancing opportunities and excited to collaborate on projects that push the boundaries of AI technology. Let's connect and explore the possibilities of AI-driven innovation together! -->
           <span>Greetings, I am Diwakar Singh,</span><br><br>
-          an ardent freelance Artificial Intelligence (AI) enthusiast, deeply immersed in the realms of machine learning and deep learning. My expertise lies in crafting sophisticated recommendation systems, developing predictive models, and creating intelligent assistants designed to elevate user experiences to unprecedented levels.
+          an ardent freelance Artificial Intelligence (AI) enthusiast, deeply immersed in the realms of machine learning
+          and deep learning. My expertise lies in crafting sophisticated recommendation systems, developing predictive
+          models, and creating intelligent assistants designed to elevate user experiences to unprecedented levels.
 
-          Committed to the pursuit of knowledge, I maintain a vigilant awareness of the cutting-edge advancements within the dynamic fields of AI and machine learning. This dedication enables me to implement state-of-the-art solutions and stay at the forefront of technological evolution.
+          Committed to the pursuit of knowledge, I maintain a vigilant awareness of the cutting-edge advancements within
+          the dynamic fields of AI and machine learning. This dedication enables me to implement state-of-the-art
+          solutions and stay at the forefront of technological evolution.
 
-          I am actively seeking freelance opportunities, and I am eager to engage in collaborative projects that push the boundaries of AI technology. My passion for innovation, coupled with a robust skill set, positions me as a valuable asset for ventures aiming to harness the transformative power of artificial intelligence.
+          I am actively seeking freelance opportunities, and I am eager to engage in collaborative projects that push
+          the boundaries of AI technology. My passion for innovation, coupled with a robust skill set, positions me as a
+          valuable asset for ventures aiming to harness the transformative power of artificial intelligence.
 
-          Let us connect and embark on a journey to explore the limitless possibilities that AI-driven innovation holds. I look forward to contributing my expertise to projects that redefine the landscape of technological excellence.
+          Let us connect and embark on a journey to explore the limitless possibilities that AI-driven innovation holds.
+          I look forward to contributing my expertise to projects that redefine the landscape of technological
+          excellence.
         </p>
 
-      <!-- <div class="about-info-grid">
+        <!-- <div class="about-info-grid">
         <div><p><span> &#x2022; Name:</span> <p>Diwakar Singh</p></p></div>
         <div><p><span> &#x2022; Email:</span> <p>diwakarsingh7231236@gmail.com</p></p></div>
         <div><p><span> &#x2022; Experience:</span> <p>1 Years</p></p></div>
@@ -106,27 +136,33 @@
         <div><p><span> &#x2022; Freelance:</span> <p>Available</p></p></div>
       </div> -->
 
-      <div>
-        <button class="download-cv-btn">DOWNLOAD CV</button>
+        <div>
+          <button class="download-cv-btn">DOWNLOAD CV</button>
+        </div>
+
+        <div class="AS-email-n-links">
+          <a href="https://www.linkedin.com/in/diwakar-singh-741959243/" target="_blank"
+            style="text-decoration: none; color: var(--secondary-color);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg> &nbsp;
+          </a>
+          <a href="https://github.com/AI-ML-DL-EXPERT" target="_blank"
+            style="text-decoration: none; color: var(--secondary-color);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+            </svg>
+          </a>
+        </div>
+
+        <div>
+        </div>
       </div>
 
-      <div class="AS-email-n-links">
-        <a href="https://www.linkedin.com/in/diwakar-singh-741959243/" target="_blank" style="text-decoration: none; color: var(--secondary-color);">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-          </svg> &nbsp;
-        </a>
-        <a href="https://github.com/AI-ML-DL-EXPERT" target="_blank" style="text-decoration: none; color: var(--secondary-color);">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-          </svg>
-        </a>
-      </div>
-
-      <div>
-      </div>
-      </div>
-      
     </div>
   </section>
 
@@ -144,54 +180,54 @@
             <div class="skill-per" per="85%" style="max-width: 85%;"></div>
           </div>
         </div>
-            
-      <div class="skill">
-        <img class="image" src="ASSETS/ICONS/pandas Icon.png" alt="">
-        <!-- <div class="skill-name">Tensorflow</div> -->
-        <div class="skill-bar">
-          <div class="skill-per" per="95%" style="max-width: 95%;"></div>
-        </div>
-      </div> 
-            
-      <div class="skill">
-        <img class="image" src="ASSETS/ICONS/matplotlib icon.png" alt="">
-        <!-- <div class="skill-name">Tensorflow</div> -->
-        <div class="skill-bar">
-          <div class="skill-per" per="90%" style="max-width: 90%;"></div>
-        </div>
-      </div> 
-            
-      <div class="skill">
-        <img class="image" src="ASSETS/ICONS/Seaborn icon.png" alt="">
-        <!-- <div class="skill-name">Tensorflow</div> -->
-        <div class="skill-bar">
-          <div class="skill-per" per="85%" style="max-width: 85%;"></div>
-        </div>
-      </div> 
-  
-      <div class="skill">
-        <img class="image" src="ASSETS/ICONS/Mysql Icon.png" alt="">
-        <!-- <div class="skill-name"></div> -->
-        <div class="skill-bar">
-          <div class="skill-per" per="65%" style="max-width: 65%;"></div>
-        </div>
-      </div>
-        
-      <div class="skill">
-        <img class="image" src="ASSETS/ICONS/Sklearn Icon.png" alt="">
-        <!-- <div class="skill-name">Tensorflow</div> -->
-        <div class="skill-bar">
-          <div class="skill-per" per="80%" style="max-width: 80%;"></div>
-        </div>
-      </div>
 
-      <div class="skill">
-        <img class="image" src="ASSETS/ICONS/tensorflow icon.png" alt="">
-        <!-- <div class="skill-name">Tensorflow</div> -->
-        <div class="skill-bar">
-          <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+        <div class="skill">
+          <img class="image" src="ASSETS/ICONS/pandas Icon.png" alt="">
+          <!-- <div class="skill-name">Tensorflow</div> -->
+          <div class="skill-bar">
+            <div class="skill-per" per="95%" style="max-width: 95%;"></div>
+          </div>
         </div>
-      </div>
+
+        <div class="skill">
+          <img class="image" src="ASSETS/ICONS/matplotlib icon.png" alt="">
+          <!-- <div class="skill-name">Tensorflow</div> -->
+          <div class="skill-bar">
+            <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <img class="image" src="ASSETS/ICONS/Seaborn icon.png" alt="">
+          <!-- <div class="skill-name">Tensorflow</div> -->
+          <div class="skill-bar">
+            <div class="skill-per" per="85%" style="max-width: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <img class="image" src="ASSETS/ICONS/Mysql Icon.png" alt="">
+          <!-- <div class="skill-name"></div> -->
+          <div class="skill-bar">
+            <div class="skill-per" per="65%" style="max-width: 65%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <img class="image" src="ASSETS/ICONS/Sklearn Icon.png" alt="">
+          <!-- <div class="skill-name">Tensorflow</div> -->
+          <div class="skill-bar">
+            <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <img class="image" src="ASSETS/ICONS/tensorflow icon.png" alt="">
+          <!-- <div class="skill-name">Tensorflow</div> -->
+          <div class="skill-bar">
+            <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+          </div>
+        </div>
 
         <div class="skill">
           <img class="image" src="ASSETS/ICONS/Keras Icon.png" alt="">
@@ -204,26 +240,32 @@
       </div>
 
       <div class="skills-Info">
-        
+
       </div>
       <p>
-        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Proficient AIML (Artificial Intelligence Markup Language) developer with expertise in Python.
+        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Proficient AIML (Artificial Intelligence
+        Markup Language) developer with expertise in Python.
         <br><br>
-        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Strong data manipulation and analysis skills using Pandas, enhancing insights through Matplotlib and Seaborn for effective visualization.
+        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Strong data manipulation and analysis skills
+        using Pandas, enhancing insights through Matplotlib and Seaborn for effective visualization.
         <br><br>
-        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Specialized in deep learning, utilizing TensorFlow and Keras to design and implement intricate neural network architectures.
+        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Specialized in deep learning, utilizing
+        TensorFlow and Keras to design and implement intricate neural network architectures.
         <br><br>
-        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Experienced in machine learning, leveraging scikit-learn to build and deploy models for diverse applications.
+        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Experienced in machine learning, leveraging
+        scikit-learn to build and deploy models for diverse applications.
         <br><br>
-        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Competent in MySQL, facilitating seamless integration of databases with AI applications.
+        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Competent in MySQL, facilitating seamless
+        integration of databases with AI applications.
         <br><br>
-        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Comprehensive understanding of artificial intelligence and deep learning concepts.
+        <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Comprehensive understanding of artificial
+        intelligence and deep learning concepts.
         Well-equipped to tackle complex challenges and drive innovation in the dynamic field of data science.
-</p>
+      </p>
     </div>
 
 
-      </div>
+    </div>
     </div>
   </section>
 
@@ -232,11 +274,10 @@
   <section id="Projects" class="section-content-container project-specific-container">
     <h1>Projects</h1>
     <div class="project-button-container">
-      <button class="project-btn AI-project-btn" 
-      onclick="
+      <button class="project-btn AI-project-btn" onclick="
       Render_Project_section(AIprojects);
       
-      ">Machine Learning</button> 
+      ">Machine Learning</button>
       <button class="project-btn ML-project-btn" onclick="
       Render_Project_section(MLprojects);
       
@@ -244,7 +285,7 @@
     </div>
     <div class="projects-containers height-auto-and-centered">
       <div class="black-center-line">
-        
+
       </div>
     </div>
   </section>
@@ -258,65 +299,82 @@
       <p>
         Hello there,
         <br><br>
-        Thank you for visiting my portfolio website! Whether you have a potential collaboration in mind, a question about my work, or just want to say hello, I would love to hear from you.
+        Thank you for visiting my portfolio website! Whether you have a potential collaboration in mind, a question
+        about my work, or just want to say hello, I would love to hear from you.
         <br><br>
-        Feel free to use the contact form below to reach out, and I'll get back to you as soon as possible. Your feedback and inquiries are important to me, and I appreciate your interest in my work.
+        Feel free to use the contact form below to reach out, and I'll get back to you as soon as possible. Your
+        feedback and inquiries are important to me, and I appreciate your interest in my work.
         <br><br><br>
-     
-          <b>Email:</b> diwakarsingh7231236@gmail.com
-          <br><br>
-          <b>Follow Me At:</b> <br><br>
-          <a href="https://www.linkedin.com/in/diwakar-singh-741959243/" target="_blank" style="text-decoration: none; color: var(--secondary-color);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-            </svg> &nbsp;
-          </a>
-          <a href="https://github.com/AI-ML-DL-EXPERT" target="_blank" style="text-decoration: none; color: var(--secondary-color);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-            </svg>
-          </a>
+
+        <b>Email:</b> diwakarsingh7231236@gmail.com
+        <br><br>
+        <b>Follow Me At:</b> <br><br>
+        <a href="https://www.linkedin.com/in/diwakar-singh-741959243/" target="_blank"
+          style="text-decoration: none; color: var(--secondary-color);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+          </svg> &nbsp;
+        </a>
+        <a href="https://github.com/AI-ML-DL-EXPERT" target="_blank"
+          style="text-decoration: none; color: var(--secondary-color);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+          </svg>
+        </a>
       </p>
-        
-      <form 
-      target="_blank" 
-      action="https://formsubmit.co/diwakarsingh7231236@gmail.com" 
-      method="POST"
-      >
-      <h2>&nbsp;&nbsp;Just Say Hello ! <br></h2>
-      <input class="input-styling" placeholder="Full Name" name="name"/>
-      <input class="input-styling" placeholder="Email Address" required type="email" name="email"/>
-      <textarea class="input-styling" placeholder="Your message" name="message"></textarea>
-      <input class="input-styling" type="hidden" name="_captcha" value="false">
-      <input  class="submit-btn" type="submit"/>
-  
+
+      <form target="_blank" action="https://formsubmit.co/diwakarsingh7231236@gmail.com" method="POST">
+        <h2>&nbsp;&nbsp;Just Say Hello ! <br></h2>
+        <input class="input-styling" placeholder="Full Name" name="name" />
+        <input class="input-styling" placeholder="Email Address" required type="email" name="email" />
+        <textarea class="input-styling" placeholder="Your message" name="message"></textarea>
+        <input class="input-styling" type="hidden" name="_captcha" value="false">
+        <input class="submit-btn" type="submit" />
+
       </form>
     </div>
   </section>
 
-  <footer id="footer-section-id" class="footer-section-class">
-    <div class="footer-container">
-      <!-- <div>
-        <div>Diwakar Singh</div>
-      </div> -->
-      <div class="footer-content">
-        <p>&copy; 2024 Diwakar Singh Website.&nbsp;All rights reserved.</p>
-      </div>
+  <footer id="footer-section-id">
+  
+  <div class="f1"> 
+    <div class="footer-name">
+      <h4>Diwakar</h4>
+      Machine Learning Engineer
     </div>
+    <div class="footer-content">
+      <a>Services</a>
+      <a>Portfolio</a>
+      <a>Contact</a>
+    </div>  
+    <div class="footer-logo">
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </div> 
+  <div class="f2">
+    <div class="additional">Diwakar 2024</div>
+  </div>
   </footer>
 
-  
+
   <!-- Load library from the CDN -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
   <!-- Setup and start animation! -->
   <script>
     var typed = new Typed('#element', {
-      strings: ['Artificial Intelligence','Machine Learning','Deep Learning'],
+      strings: ['Artificial Intelligence', 'Machine Learning', 'Deep Learning'],
       typeSpeed: 50,
       loop: true
     });
 
   </script>
 </body>
+
 </html>
