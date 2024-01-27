@@ -1,19 +1,27 @@
 .Scroll-up-button{
+
   position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+
   background: var(--Button);
   color: white;
   font-size: 30px;
   font-weight: bold;
-  border-radius: 50%;
+  border-radius: 40%;
   border: none;
   height: 60px;
   width: 60px;
-  right: 30px;
-  bottom: 20px;
+
+  
+
   cursor: pointer;
   z-index: 10;
   transition: display .5s ease-in-out;
 }
 .hidden-element{
+  animation: existence-to-bottom  .2s ease-in-out 1;
+  transition: existence-to-bottom  .2s ease-in-out;
   display: none;
 }

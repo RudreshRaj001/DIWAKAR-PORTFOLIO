@@ -26,6 +26,7 @@ html {
   --scroll: rgb(255, 255, 255);
 
   --footer-color: rgb(16, 14, 27);
+  --footer-link-color: #6E57E0;
 
   --color-1: #8100C2;
   --color-2: #660099;
@@ -50,6 +51,7 @@ html {
   --scroll: rgb(0, 0, 0);
 
   --footer-color: #6E57E0;
+  --footer-link-color: rgb(16, 14, 27);
 
   --Heading-color: #000000;
   --Text-color: #6D6A7C;

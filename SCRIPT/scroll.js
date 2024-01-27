@@ -81,8 +81,10 @@ const Home_observer = new IntersectionObserver((entries)=>{
     console.log(entry);
     if (entry.isIntersecting){
       document.querySelector('.Scroll-up-button').classList.add('hidden-element');
+      // document.querySelector('.Scroll-up-button').classList.add('.scroll-up-button-animation');
     } else {
       document.querySelector('.Scroll-up-button').classList.remove('hidden-element');
+      // document.querySelector('.Scroll-up-button').classList.remove('.scroll-up-button-animation');
       // entry.target.classList.remove('skill-bar-animate');
     }
   });

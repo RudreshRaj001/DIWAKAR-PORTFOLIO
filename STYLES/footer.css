@@ -53,13 +53,31 @@ footer {
   display: flex;
   gap: 3vh;
   font-size: 3vh;
-
+}
+.footer-logo>a{
+  text-decoration: none;
+  color: white;
+}
+.footer-logo>a>i{
+  cursor: pointer;
+}
+.footer-logo>a>i:hover{
+  color: var(--footer-link-color);
 }
 
 .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-content>a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.footer-content>a:hover{
+  color: var(--footer-link-color);
 }
 
 .footer additional{
