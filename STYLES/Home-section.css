@@ -41,7 +41,7 @@
   margin-top: 15px;
   font-size: 17px;
   color: var(--Text-color);
-
+  font-weight: 100;
 }
 .home-btn-container{
   display: flex;
@@ -82,6 +82,6 @@
   
 }
 
-#element{
+.Title_color{
   color: var(--Button);
 }
