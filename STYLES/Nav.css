@@ -17,7 +17,7 @@
   width: 100%;
   /* background-color: rebeccapurple; */
 
-  z-index: 1;
+  z-index: 10;
   transition: opacity 0.2s ease-in-out;
   /* opacity: 0; */
 }
@@ -49,7 +49,7 @@
   transition: color .2s ease-in;
 }
 .left-nav-section:hover{
-  color: blueviolet;
+  color: var(--Button);
 }
 
 .right-nav-section ul li{
@@ -58,7 +58,7 @@
   transition: color .2s ease-in;
 }
 .right-nav-section ul li:hover{
-  color: blueviolet;
+  color: var(--Button);
 }
 
 
