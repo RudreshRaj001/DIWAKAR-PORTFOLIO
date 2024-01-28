@@ -1,4 +1,16 @@
-<div class="Skill-panel">
+Old Skill Section
+
+<section id="Skills" class="section-content-container skills-specific-container">
+    
+    <div>
+      <h1>Skills</h1>
+    </div>
+    <div class="Skill-Button">
+      <button>Machine Learning</button>
+      <button>Game Development</button>
+    </div>
+    
+    <div class="Skill-panel">
       <div class="skills-containers height-auto-and-centered container">
 
         <div class="skill">
@@ -88,3 +100,5 @@
         Well-equipped to tackle complex challenges and drive innovation in the dynamic field of data science.
       </p>
     </div>
+    
+  </section>
