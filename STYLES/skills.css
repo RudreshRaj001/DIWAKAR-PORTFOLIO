@@ -2,6 +2,11 @@
   width: 80vw;
   height: 120vh;
   margin: auto;
+
+  /* For Making the heading and the other div centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
  .Skill-panel{
   width: 80vw;
@@ -52,7 +57,7 @@
 .skill-name{
   font-size: 18px;
   font-weight: 700;
-  color: var(--primery-color);
+  color: var(--primary-color);
   text-transform: uppercase;
   margin: 20px 0;
 }
@@ -107,4 +112,18 @@
   to{
     width: 100%;
   }
+}
+
+
+.Skill-Button>button{
+  width: 150px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  /* background-color: var(--Button); */
+  /* border: 2px solid var(--Button); */
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
 }

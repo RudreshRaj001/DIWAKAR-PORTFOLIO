@@ -21,9 +21,6 @@
   
 }
 
-
-
-
 .black-center-line{
   /* background-color: var(--secondary-color); */
   background-color: #6E57E0;
@@ -34,7 +31,7 @@
   /* display: flex; */
   /* align-items: center; */
 }
-.black-center-line span{
+.Center-Line-Ball{
   /* position: fixed; */
   margin-left: -8px;
   color: #6E57E0;

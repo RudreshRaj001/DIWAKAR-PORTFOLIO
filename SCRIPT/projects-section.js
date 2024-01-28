@@ -107,7 +107,7 @@ function Render_Project_section(projects){
       direction = 0;
     };
     projectsHTML += `
-    <span>&#x2022;</span>
+    <div class="Center-Line-Ball">&#x2022;</div>
     <div class="each-project ${direct} ${direct_Animate}">
       <h2>${X.Project_Name}</h2> 
       <h4>${X.Project_Description}</h4>

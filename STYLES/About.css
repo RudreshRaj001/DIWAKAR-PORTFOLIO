@@ -12,9 +12,12 @@
   border-radius: 10px;
   /* box-shadow: 0 0px 5px 5px var(--primary-shadow); */
 }
-#About h1{
-  
+.about-heading{
+  margin-bottom: 30px;
 }
+/* #About h1{
+  
+} */
 
 .about-info-section{
   display: flex;
@@ -59,10 +62,10 @@
   font-weight: bold;
   /* margin-right: 20px; */
 }
-.about-info-grid>div>p>p{
-  /* margin-left: 30px; */
-  /* font-weight: bold; */
-}
+/* .about-info-grid>div>p>p{
+  margin-left: 30px;
+  font-weight: bold;
+} */
 .download-cv-btn{
   background-color: var(--Button);
   color: var(--Button-text);
