@@ -102,3 +102,51 @@ Old Skill Section
     </div>
     
   </section>
+
+
+
+
+New Skill Section
+
+  <section id="Skills" class="section-content-container skills-specific-container">
+    
+    <div class="S1">
+      <h1>Skills</h1>
+    </div>
+    <!-- <div class="S2 Skill-Button">
+      <button>Machine Learning</button>
+      <button>Game Development</button>
+    </div> -->
+  
+  <div class="S3 Skill-panel">
+    <div class="skills-containers height-auto-and-centered">
+
+      <div class="Circular-bar-container">
+        <div class="circular-progress">
+          <span class="Circular-bar-progress-value">0%</span>
+          <img class="image" src="ASSETS/ICONS/Python Icon.png" alt="" style="height: 30px; z-index: 2;">
+        </div>
+        <span class="Circular-bar-text">Python</span>
+      </div>
+      
+      <div class="Circular-bar-container">
+        <div class="circular-progress">
+          <span class="Circular-bar-progress-value">0%</span>
+        </div>
+        <span class="Circular-bar-text">HTML & CSS</span>
+      </div>
+
+      <div class="Circular-bar-container">
+        <div class="circular-progress">
+          <span class="Circular-bar-progress-value">0%</span>
+        </div>
+        <span class="Circular-bar-text">HTML & CSS</span>
+      </div>
+
+
+     
+
+     
+  </div>
+    
+  </section>

@@ -1,0 +1,105 @@
+.skills-specific-container{
+  width: 80vw;
+  height: fit-content;
+  margin: auto;
+
+  /* For Making the heading and the other div centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.Skill-Button>button{
+  width: 150px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  /* background-color: var(--Button); */
+  /* border: 2px solid var(--Button); */
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.S1{
+  border: 2px solid rgb(0, 255, 68);
+}
+.S2{
+  border: 2px solid rgb(170, 255, 0);
+}
+.S3{
+  border: 2px solid rgb(255, 0, 119);
+}
+.skills-containers {
+  border: 2px solid rgb(60, 0, 255);
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 30px; */
+}
+
+/* New Circular Skill Bar */
+
+
+.Circular-bar-container{
+  display: flex;
+  width: 220px;
+  height: 220px;
+  padding: 50px 0;
+  border-radius: 8px;
+  background: #ffffffac;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.circular-progress{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  /* background-color: rgb(255, 255, 255); */
+  background: var(--primary-color);
+}
+.Circular-bar-progress-value{
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  color: #7d2ae8;
+}
+.Circular-bar-text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #606060;
+}
+
+
+/* Animation */
+.card-animation{
+  animation: skill-card-animation .4s ease forwards;
+  transition: skill-card-animation .4s ease-in-out;
+}
+@keyframes skill-card-animation {
+  from{
+    opacity: 0;
+    transform: scaleX(.9) rotateZ(-45deg) translateY(-50%);
+  }
+  to{
+    opacity: 1;
+    transform: scaleX(1) rotateZ(0) translateY(0%);
+  }
+}
