@@ -97,7 +97,15 @@
 /* Utility Class */
 .left-project{
   margin-left: -420px;
+  /* position: relative; */
 }
+/* .left-project::after{
+  content: "."; 
+  color: #6E57E0;
+  font-size: 50px;
+  position: absolute;
+  right: -21px;
+} */
 .right-project{
   margin-left: 20px;
 }
