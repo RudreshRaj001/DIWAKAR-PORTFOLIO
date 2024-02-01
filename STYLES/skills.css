@@ -1,133 +1,142 @@
- .skills-specific-container{
-  width: 80vw;
-  height: fit-content;
-  margin: auto;
+ .skills-specific-container {
+   width: 80vw;
+   height: fit-content;
+   margin: auto;
 
-  /* For Making the heading and the other div centered */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 50px;
-}
- .Skill-panel{
-  width: 80vw;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin-top: 30px;
-}
+   /* For Making the heading and the other div centered */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 50px;
+ }
+
+ .Skill-panel {
+   width: 80vw;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   margin-top: 30px;
+
+ }
 
 
-.skills-specific-container>div>p{
-  width: 65ch;
-  font-size: 18px;
-  padding: 20px;
-  margin-left: 20px;
-  border: 2px solid var(--secondary-color);
-  border-radius: 5px;
-}
+ .skills-specific-container>div>p {
+   width: 65ch;
+   font-size: 18px;
+   padding: 20px;
+   margin-left: 20px;
+   border: 2px solid var(--secondary-color);
+   border-radius: 5px;
+ }
 
-.skills-containers{
-  /* height: 90vh;
+ .skills-containers {
+   /* height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
   overflow: scroll;
   background-color: red; */
 
-  height: auto;
-  width: 40vw;
-  margin: 0;
-  /* position: absolute; */
-  left: 150px;
-  margin-top: 50px;
-}
+   height: auto;
+   width: 40vw;
+   margin: 0;
+   /* position: absolute; */
+   left: 150px;
+   margin-top: 50px;
+ }
 
-.skill{
-  width: 550px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 34px;
-}
-.image{
-  height: 30px;
-}
-/* .image-svg{
+ .skill {
+   width: 550px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 34px;
+ }
+
+ .image {
+   height: 30px;
+ }
+
+ /* .image-svg{
   height: 10px;
 } */
 
 
-.skill-name{
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  margin: 20px 0;
-}
+ .skill-name {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--primary-color);
+   text-transform: uppercase;
+   margin: 20px 0;
+ }
 
-.skill-bar{
-  height: 14px;
-  width: 380px;
-  background: #282828;
-  border-radius: 3px;
-}
-.skill-per{
-  height: 14px;
-  background: blueviolet;
-  border-radius: 3px;
-  position: relative;
-  /* animation: fillBars 2.5s 1; */
-}
-.skill-bar-animate{
-  animation: fillBars 2.5s 1;
-}
-.skill-per::before{
-  content: attr(per);
-  position: absolute;
-  padding: 4px 6px;
-  /* background-color: rgb(220 217 217); */
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border-radius: 4px;
-  font-size: 12px;
-  top: -35px;
-  right: 0;
-  transform: translateX(50%);
-  z-index: 1;
-}
-.skill-per::after{
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  /* background-color: rgb(220 217 217); */
-  background-color: var(--secondary-color);
-  top: -20px;
-  right: 0;
-  transform: translateX(50%) rotate(45deg);
-  border-radius: 2px;
-}
+ .skill-bar {
+   height: 14px;
+   width: 380px;
+   background: #282828;
+   border-radius: 3px;
+ }
 
-@keyframes fillBars {
-  from{
-    width: 0;
-  }
-  to{
-    width: 100%;
-  }
-}
+ .skill-per {
+   height: 14px;
+   background: blueviolet;
+   border-radius: 3px;
+   position: relative;
+   /* animation: fillBars 2.5s 1; */
+ }
+
+ .skill-bar-animate {
+   animation: fillBars 2.5s 1;
+ }
+
+ .skill-per::before {
+   content: attr(per);
+   position: absolute;
+   padding: 4px 6px;
+   /* background-color: rgb(220 217 217); */
+   color: var(--primary-color);
+   background-color: var(--secondary-color);
+   border-radius: 4px;
+   font-size: 12px;
+   top: -35px;
+   right: 0;
+   transform: translateX(50%);
+   z-index: 1;
+ }
+
+ .skill-per::after {
+   content: "";
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   /* background-color: rgb(220 217 217); */
+   background-color: var(--secondary-color);
+   top: -20px;
+   right: 0;
+   transform: translateX(50%) rotate(45deg);
+   border-radius: 2px;
+ }
+
+ @keyframes fillBars {
+   from {
+     width: 0;
+   }
+
+   to {
+     width: 100%;
+   }
+ }
 
 
-.Skill-Button>button{
-  width: 150px;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: transparent;
-  /* background-color: var(--Button); */
-  /* border: 2px solid var(--Button); */
-  border: none;
-  color: var(--secondary-color);
-  cursor: pointer;
-}
+ .Skill-Button>button {
+   width: 150px;
+   padding: 20px;
+   font-size: 20px;
+   font-weight: bold;
+   background-color: transparent;
+   /* background-color: var(--Button); */
+   /* border: 2px solid var(--Button); */
+   border: none;
+   color: var(--secondary-color);
+   cursor: pointer;
+ }
